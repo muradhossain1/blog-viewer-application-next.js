@@ -5,7 +5,6 @@ import Link from "next/link";
 const Navber = async () => {
     const { getUser } =  getKindeServerSession();
     const user = await getUser();
-    console.log(user)
     const navLinks = <>
         <li><Link className="text-base font-semibold" href='/'>Home</Link></li>
         <li><Link className="text-base font-semibold" href='/profile'>Profile</Link></li>
@@ -44,7 +43,7 @@ const Navber = async () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                   { user ?  <Link href='/api/auth/logout' className="px-5 py-1 text-white rounded-md bg-gray-700 hover:bg-gray-700">Logout</Link> :  <Link href='/api/auth/login' className="px-5 py-1 text-white rounded-md bg-gray-700 hover:bg-gray-700">Login</Link>}
+                   { user ?  <Link href='/api/auth/logout' className="px-5 py-2 text-white rounded-md bg-gray-700 hover:bg-gray-700">Logout</Link> :  <Link href='/api/auth/login' className="px-5 py-2 text-white rounded-md bg-gray-700 hover:bg-gray-700">Login</Link>}
                 </div>
             </div>
         </div>

@@ -1,7 +1,9 @@
-
+import PostedCard from '../app/components/PostedCard';
 
 export default function Home() {
   return (
-    <div className="text-4xl">home</div>
+    <div>
+      <PostedCard></PostedCard>
+    </div>
   );
 }
