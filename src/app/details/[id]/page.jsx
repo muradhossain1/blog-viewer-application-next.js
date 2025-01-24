@@ -22,9 +22,9 @@ const page = () => {
     }, [id]);
 
     return (
-        <div>
-            <h1>{post?.title}</h1>
-            <p>{post?.body}</p>
+        <div className="text-center pt-8 space-y-2 md:w-2/3 mx-auto">
+            <h1 className="text-2xl font-medium">{post?.title}</h1>
+            <p className="text-xl font-normal">{post?.body}</p>
         </div>
     );
 };
